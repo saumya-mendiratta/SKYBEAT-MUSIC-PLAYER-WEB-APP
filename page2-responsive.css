@@ -1,0 +1,247 @@
+
+/*--------------For screen size less than 1200px---------------*/
+
+@media screen and (max-width: 1200px) {
+	/* --- Favourites from the navbar will not appear---- */
+	.favs {
+		display: none !important;
+	}
+	/*---Size of search bar reduced---*/
+	.search-bar {
+		width: 30%;
+	}
+	input {
+		font-size: 11px !important;
+	}
+	/*-----Name------*/
+	.song-name-main h1 {
+		font-size: 2.4vw;
+	}
+	/*-----Description----*/
+	.desc {
+		font-size: 1.2vw;
+	}
+}
+
+/*--------------For screen size less than 900px---------------*/
+
+@media screen and (max-width: 900px) {
+	/* ----Description ----*/
+	.desc {
+		font-size: 1.6vw;
+	}
+	/* -----More button appears---- */
+	label {
+		display: block;
+	}
+	/* --Hide aside section 2 --*/
+	.section-2 {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 76vh;
+        background-image: linear-gradient(180deg, #4b4e4f, #497083);
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 14%;
+		overflow: scroll;
+		padding-left:10px;
+		z-index: 5;
+		padding-right:5px;
+		transition:visibility ease-in-out 0.3s;
+		transition: opacity ease-in-out 0.3s;
+	}
+
+	/* ---More button-- */
+	input[type="checkbox"]:checked ~ .section-2 {
+		visibility: visible;
+		opacity: 1;
+	}
+	.section-heading div{
+		color: lightgrey;
+	}
+	/*-----Similar artists---*/
+	.list {
+		overflow: hidden;
+		height: auto;
+	}
+	.list-item {
+    background-color: #242a2c;
+    opacity: 0.85;	}
+	/* --Hide section 2 scrollbar-- */
+	.section-2::-webkit-scrollbar {
+		display: none;
+	}
+	/* --Making section 1 100% when section-2 is hidden--- */
+	.section-1 {
+		width: 100%;
+	}
+	/* --Jumbotron size-- */
+	.jumbotron {
+		height: 30vw;
+	}
+	/* --Image in the jumbotron--- */
+	.jumbotron-image {
+		height: 30vw;
+		width: 30vw;
+	}
+	/*--- Customizing button----*/
+	.btns > button {
+		height: 4vw;
+		width: 11vw;
+		font-size: 1.9vw;
+	}
+	/* --Text below button--- */
+	.action-part p {
+		font-size: 1.57vw;
+	}
+
+}
+
+/*--------------For screen size less than 700px---------------*/
+
+@media screen and (max-width: 700px) {
+
+	/* ---Followers and name--- */
+	.followers,
+	.author {
+		font-size: 2vw;
+	}
+	/* --Jumbotron description-- */
+	.desc {
+		font-size: 1.8vw;
+	}
+
+	/*----Adjusting fonts in footer----*/
+	 .song-desc div:nth-child(1){
+       font-size: 1rem;
+    }
+     .song-desc div:nth-child(2){
+       font-size: 0.8rem !important;
+    }
+	/*----- Removing volume icon--- */
+	.extras > div:nth-child(3) {
+		display: none;
+	}
+		/*----- Removing volume slider--- */
+	.extras > div:nth-child(4) {
+		display: none;
+	}
+
+}
+
+/*--------------For screen size less than 550px---------------*/
+
+@media screen and (max-width: 550px) {
+
+/*---------------Nav bar---------------------------------*/
+	/*---------Adjusting Navigation Bar elements-----*/
+	.website-logo img {
+		height: 40px;
+		width: 40px;
+	}
+	/*-- website name top-- */
+	.website-name h1 {
+		font-size: 3vw;
+	}
+	/* --Website name bottom-- */
+	.website-name h4 {
+		font-size: 2vw;
+	}
+	/* --Notification bell-- */
+	.notification-bell img {
+		width: 20px;
+		height: 20px;
+	}
+	/* --Profile picture-- */
+	.profile-picture img {
+		width: 30px;
+		height: 30px;
+	}
+	/* notification bell and profile picture */
+	.notification-bell,
+	.profile-picture {
+		margin-top: 8px;
+	}
+    
+    /*-------Jumbotron-----------*/
+
+    /* Jumbotron */
+	.jumbotron {
+		height: 60vw;
+		text-align: justify;
+	}
+   	
+	/* image in the jumbotron */
+	.jumbotron-image {
+		height: 60vw;
+		width: 60vw;
+	}
+
+    /*-------Name--------*/
+	.song-name-main h1 {
+		font-size: 3vw;
+	}
+	/* Followers and name */
+	.followers,
+	.author {
+		font-size: 3vw;
+	}
+	.followers{
+		padding-top: 2%;
+	}
+	/* Jumbotron description */
+	.desc {
+		font-size: 2.4vw;
+		padding-left: 4px;
+	}
+	/* Buttons and tarakc details */
+	.action-part {
+		padding-top: 3%;
+	}
+	.action-part p{
+		padding: 3%;
+		font-size: 2vw;
+	}
+
+	/* --Buttons-- */
+	.btns > button {
+		height: 7vw;
+		width: 17vw;
+		font-size: 3vw;
+	}
+	.btns {
+     margin-left: 2%;
+	}
+	
+	/*------Footer Section------*/
+
+	/*-----Removing Extras-----*/
+	.bottom{
+		justify-content: space-around;
+	}
+	.extras{
+		display: none;
+	}
+    
+    .song-desc{
+    	margin-left: 4%;
+    	width: 40%;
+    }
+    .song-desc div:nth-child(1){
+       font-size: 1rem;
+    }
+     .song-desc div:nth-child(2){
+       font-size: 0.8rem !important;
+    }
+    .active-song-description {
+      width: 44%;
+    }
+    .player{
+    	width: 47%;
+    }
+   .controls>div {
+    padding: 0 5%;
+   }
+}
