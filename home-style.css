@@ -587,19 +587,23 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 /*------Images of Themes -----------------*/
 /*---Party----*/
 .music-themes-2 .outer-div:nth-child(1) .inner-div {
-	background-image: url(https://magnolia-portugal.dunegestion.com/upload4mail/magnolia-portugal/op_56219_op_19740_fotoprincipal_7_.jpg);
-	opacity: 0.9;
+	/*background-image: url(https://magnolia-portugal.dunegestion.com/upload4mail/magnolia-portugal/op_56219_op_19740_fotoprincipal_7_.jpg);*/
+    background-image: url(Images/music-themes-2/1.jpg);
+     opacity: 0.9;
 }
 /* ---Electronic-- */
 .music-themes-2 .outer-div:nth-child(2) .inner-div {
-	background-image: url(https://spillmagazine.com/wp-content/uploads/2018/06/Electronic-Music.jpg);
+	/*background-image: url(https://spillmagazine.com/wp-content/uploads/2018/06/Electronic-Music.jpg);*/
+   background-image: url(Images/music-themes-2/2.jpg);
 	opacity: 0.9;
 }
 /* --Road---- */
 .music-themes-2 .outer-div:nth-child(3) .inner-div {
-	background-image: url(https://www.go4travelblog.com/app/uploads/2018/08/Capture.jpg);
+	/*background-image: url(https://www.go4travelblog.com/app/uploads/2018/08/Capture.jpg);*/
+    background-image: url(Images/music-themes-2/3.jpg);
 	opacity: 0.9;
 }
+
 
 /* adjusting inner div properties */
 .inner-div {
