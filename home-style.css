@@ -852,6 +852,7 @@ hr {
 .coverer >.play-button{
 	height: 55px;
 	width: 55px;
+	top: -110% !important;
 	margin-top: -0.3vh;
 }
 
