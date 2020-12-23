@@ -293,18 +293,22 @@ main {
 
 /*-------Play button visible on hover---------*/
 .play-button {
-	width: 100%;
-	height: 90%;
-	position: relative;
-	top: -104%;
-	color: rgba(255, 255, 255, 0);
-	/* Opacity will be 0 normally */
-	background-color: rgba(0, 0, 0, 0);
-	font-size: 35px;
-	padding-top: 5%;
-	text-align: center;
-	z-index: 5;
-	transition: all ease-in-out 0.2s;
+    width: 108%;
+    height: 104%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -114%;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    padding-top: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all ease-in-out 0.2s;
+    overflow: hidden;
 }
 /* ---- play icon from font awesome----- */
 .play-button i {
@@ -851,13 +855,14 @@ hr {
 .coverer {
 	width: 7vh;
 	height: 7vh;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .coverer >.play-button{
-	height: 55px;
+	/*height: 55px;
 	width: 55px;
 	top: -110% !important;
-	margin-top: -0.3vh;
+	margin-top: -0.3vh;*/
+	overflow: hidden;
 }
 
 .left-content>div>p{
