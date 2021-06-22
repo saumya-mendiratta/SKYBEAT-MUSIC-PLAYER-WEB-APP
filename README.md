@@ -1,6 +1,6 @@
 # SKYBEAT-MUSIC-PLAYER-WEB-APP
 
-Music Player Website developed using HTML & CSS.<br><br>
+<h2>Music Player Website developed using HTML & CSS.</h2>
  <h3>Link : https://saumya-mendiratta.github.io/SKYBEAT-MUSIC-PLAYER-WEB-PROJECT/</h3>
 
 
